@@ -1,0 +1,56 @@
+video{
+    position: fixed;
+    z-index:-1;
+    right: 0;
+    bottom: 0;
+}
+.container{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login_page{
+    height: 310px;
+    width: 270px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    color: rgb(255, 238, 238);
+    padding-top: 60px;
+
+}
+input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    margin-top:20px;
+    background: transparent;
+    outline: none;
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 25px;
+    box-shadow: 0 0 20px #fff;
+    transition: box-shadow 0.5sec ease;
+}
+.btn{
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+    margin-top: 30px;
+    background: transparent;
+    border-radius: 30px;
+    box-shadow: 0 0 20px #fff;
+    cursor: pointer;
+}
+input[placeholder]:focus{
+    color:#fff;
+
+}
+input:focus, .btn:hover{
+    box-shadow: 0 0 10px #fff; 
+}
